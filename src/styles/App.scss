@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Satisfy&display=swap');
+
+$font-title: Satisfy, sans-serif;
+$font-text: Roboto, sans-serif;
+$first-color: #352961; 	
+$second-color: #774181;
+$third-color: #e6b2c6;
+$fourth-color: #f6e5e5; 
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.card {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    height: 23rem;
+    width: 27rem;
+    border-radius: 10px;
+    background-color: $fourth-color;
+}
+
+.flower {
+    height: 15rem;
+    display: flex;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+h1 {
+    font-family: $font-title;
+    color: $fourth-color;
+    text-shadow: -1px -1px #774181;
+}
+
+h2 {
+    font-family: $font-title;
+    color: $third-color;
+    text-shadow: 1px -1px #774181;
+}
+
+.title-overlay {
+    position: fixed;
+    margin-top: 1rem;
+    margin-left: 0.8rem;
+}
+
+.slogan-overlay {
+    position: fixed;
+    margin-top: 12rem;
+    margin-left: 0.8rem;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    align-content:space-around;
+    justify-content: center;
+    height: 100%;
+    padding: 1rem;
+    line-height: 1.2rem;
+}
+
+p {
+    color: $second-color;
+    font-family: $font-text;
+    font-size: 0.7rem;
+    display: flex;
+}
