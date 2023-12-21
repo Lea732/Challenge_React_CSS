@@ -5,7 +5,10 @@ $font-text: Roboto, sans-serif;
 $first-color: #352961; 	
 $second-color: #774181;
 $third-color: #e6b2c6;
-$fourth-color: #f6e5e5; 
+$fourth-color: #f6e5e5;
+$fifth-color: rgb(253, 243, 243);
+$sixth-color: rgb(253, 243, 243);
+$seventh-color: rgb(160, 112, 161);
 
 * {
     box-sizing: border-box;
@@ -28,10 +31,11 @@ body, html {
     display: flex;
     align-self: center;
     flex-direction: column;
-    height: 23rem;
+    height: 25rem;
     width: 27rem;
     border-radius: 10px;
-    background-color: $fourth-color;
+    background: linear-gradient(104.3deg, $fifth-color 10.9%, $sixth-color 27.8%, $seventh-color 101.7%);
+    box-shadow: 3px 1px 31px 9px rgba(0, 0, 0, 0.2);
 }
 
 .flower {
@@ -45,13 +49,13 @@ body, html {
 h1 {
     font-family: $font-title;
     color: $fourth-color;
-    text-shadow: -1px -1px #774181;
+    text-shadow: -2px -2px $second-color;
 }
 
 h2 {
     font-family: $font-title;
     color: $third-color;
-    text-shadow: 1px -1px #774181;
+    text-shadow: 2px -1px $second-color;
 }
 
 .title-overlay {
@@ -69,17 +73,39 @@ h2 {
 .infos {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items:center;
     align-content:space-around;
-    justify-content: center;
+    justify-content: space-between;
     height: 100%;
-    padding: 1rem;
-    line-height: 1.2rem;
+    padding: 0.5rem;
+    border: $second-color solid 1px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 p {
     color: $second-color;
     font-family: $font-text;
     font-size: 0.7rem;
+}
+
+.hours {
     display: flex;
+    flex-direction: column;
+    align-items:center;
+    line-height: 1.5rem;
+}
+
+.web_mail {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    line-height: 1.5rem;
+}
+
+span {
+    text-decoration: underline;
+    color: $first-color;
+    font-weight: 600;
 }

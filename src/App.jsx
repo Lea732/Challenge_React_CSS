@@ -14,10 +14,14 @@ function App() {
         <h2>Come get the flower power !</h2>
         </div>
         <div className='infos'>
-        <p className='hours'>Opening hours: Monday (closed), Tuesday-Saturday (9:00am-4:00pm), Sunday (9:00am - 12:00am)</p>
-        <p>www.wildersflower.com</p>
-        <p>Mail adress: flowerPower@gmail.com</p>
-        <p>Adress: 674 Maple Road, 43000 Columbus, OHIO</p>
+          <div className='hours'>
+        <p><span>Opening hours:</span> Monday (closed), Tuesday-Saturday (9:00am - 4:00pm), </p><p> Sunday (9:00am - 12:00am)</p>
+        </div>
+        <div className='web_mail'>
+        <p><span>Website:</span>www.WildersFlower.com</p>
+        <p><span>Mail adress:</span> wilder_flower@gmail.com</p>
+        </div>      
+        <p className='adress'><span>Adress:</span> 674 Maple Road, 43000 Columbus, OHIO</p>
         </div>
       </div>
     </>
